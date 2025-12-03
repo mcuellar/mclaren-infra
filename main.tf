@@ -1,3 +1,7 @@
+provider "aws" {
+  region = var.aws_region
+}
+
 module "ec2_instance" {
   source  = "app.terraform.io/TuneIt/ec2-module/aws"
   version = "1.0.0"
